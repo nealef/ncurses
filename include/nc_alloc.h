@@ -92,7 +92,7 @@ extern GCC_NORETURN NCURSES_EXPORT(void) _nc_free_and_exit(int) GCC_DEPRECATED("
 #define ExitProgram(code) exit_curses(code)
 
 #else
-extern GCC_NORETURN NCURSES_EXPORT(void) _nc_free_and_exit(int) GCC_DEPRECATED("use exit_curses");
+extern GCC_NORETURN NCURSES_EXPORT(void) _nc_free_and_exit(int);
 #endif /* NO_LEAKS, etc */
 
 #ifndef HAVE_NC_FREEALL

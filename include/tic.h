@@ -141,7 +141,7 @@ extern "C" {
 #ifdef TRACE
 #define DEBUG(n, a)	if (_nc_tracing >= DEBUG_LEVEL(n)) _tracef a
 #else
-#define DEBUG(n, a)	/*nothing*/
+#define DEBUG(n, a)
 #endif
 
 /*

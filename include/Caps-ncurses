@@ -229,7 +229,7 @@
 # This is a common error in many termcap files.  We'll get notified during
 # translation when this (or any other alias) fires.
 #
-capalias	sb	sr	BSD	scroll text down
+# capalias	sb	sr	BSD	scroll text down
 #
 # AT&T extensions:
 #

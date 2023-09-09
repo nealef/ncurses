@@ -293,6 +293,10 @@ main(int argc, char **argv)
 	list = parse_columns(buffer);
 	if (list == 0)		/* blank or comment */
 	    continue;
+	if ((strcmp(list[0], "capalias") == 0) ||
+	    (strcmp(list[0], "infoalias") == 0) ||
+	    (strcmp(list[0], "used_by") == 0))
+		continue;
 	if (is_user) {
 	    if (strcmp(list[0], "userdef"))
 		continue;
@@ -343,7 +347,7 @@ main(int argc, char **argv)
 		}
 	    }
 	} else {
-	    fprintf(stderr, "Unknown type: %s\n", list[2]);
+	    fprintf(stderr, "Unknown type: %s (%s %s)\n", list[2], list[0], list[1]);
 	    exit(EXIT_FAILURE);
 	}
 	n++;

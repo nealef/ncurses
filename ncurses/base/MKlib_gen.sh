@@ -63,7 +63,7 @@ if test "${LC_MESSAGES+set}" = set; then LC_MESSAGES=C; export LC_MESSAGES; fi
 if test "${LC_CTYPE+set}"    = set; then LC_CTYPE=C;    export LC_CTYPE;    fi
 if test "${LC_COLLATE+set}"  = set; then LC_COLLATE=C;  export LC_COLLATE;  fi
 
-preprocessor="$1 -DNCURSES_WATTR_MACROS -DNCURSES_INTERNALS -I../include"
+preprocessor="$1 -DNCURSES_WATTR_MACROS -DNCURSES_INTERNALS -qnosearch -I../include"
 AWK="$2"
 USE="$3"
 
